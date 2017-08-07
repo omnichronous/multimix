@@ -13,11 +13,11 @@
     "admin-production": "cross-env process.env.section=admin NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "bootstrap-less": "*",
-    "cross-env": "*",
-    "jquery": "*",
-    "laravel-mix": "1.1.1",
-    "less": "*",
-    "less-loader": "*"
+    "bootstrap-less": "^3.3.8",
+    "cross-env": "^5.0.4",
+    "jquery": "^3",
+    "laravel-mix": "^1.4.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5"
   }
 }
