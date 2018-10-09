@@ -16,8 +16,8 @@
     "bootstrap-less": "^3.3.8",
     "cross-env": "^5.0.4",
     "jquery": "^3",
-    "laravel-mix": "^1.4.2",
-    "less": "^2.7.2",
+    "laravel-mix": "^2.1.14",
+    "less": "^3.8.1",
     "less-loader": "^4.0.5"
   }
 }
