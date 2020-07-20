@@ -1,10 +1,17 @@
 let mix = require('laravel-mix');
 
+let path = '';
+
+if (process.env.npm_config_unique_manifest) {
+  path = `${process.env.section}/`;
+  mix.setPublicPath('public_html/assets');
+} else {
+  mix.setPublicPath('public_html/assets/admin');
+}
+
 mix
-  .setPublicPath(path.normalize('public_html/assets/admin'))
   .options({
     processCssUrls: false
   })
-  .js('resources/assets/admin/js/admin.js', 'js/global.js')
-  .less('resources/assets/admin/less/admin.less', 'css/style.css')
-;
+  .js('resources/assets/admin/js/admin.js', `${path}js/global.js`)
+  .less('resources/assets/admin/less/admin.less', `${path}css/style.css`);
